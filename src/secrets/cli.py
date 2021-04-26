@@ -92,7 +92,7 @@ def app():
 
     app = typer.Typer()
 
-    print(app.add_typer(get_hex_app(), name="hex"))
+    app.add_typer(get_hex_app(), name="hex")
     app.add_typer(get_atbash_app(), name="atbash")
     app.add_typer(get_caeser_app(), name="caeser")
     app.add_typer(get_keyword_app(), name="keyword")

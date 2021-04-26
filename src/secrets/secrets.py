@@ -149,7 +149,6 @@ def keyword_cipher_decryptor(key: str, encrypted_message: str) -> str:
     return decrypted_message
 
 
-# what if the key is longer than the message?
 def vigenere_cipher_encryptor(key: str, message: str) -> str:
     """Encrypts a given message using a Vigenere Cipher (a more complicated cipher involving a keyword, in 
     which the letter subsitution of a plaintext letter is not always the same).
