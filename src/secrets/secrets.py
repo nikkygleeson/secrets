@@ -49,8 +49,8 @@ def atbash_cipher_encryptor_decryptor(message: str) -> str:
     return encrypted_decrypted_message
 
 
-def caeser_cipher_encryptor(key: int, message: str) -> str:
-    """Encrypts a given message using a Caeser Cipher (substitutes a letter of the plaintext alphabet with a 
+def caesar_cipher_encryptor(key: int, message: str) -> str:
+    """Encrypts a given message using a Caesar Cipher (substitutes a letter of the plaintext alphabet with a 
     letter located some fixed number of letters down the alphabet).
 
     If key = 3:
@@ -72,8 +72,8 @@ def caeser_cipher_encryptor(key: int, message: str) -> str:
     return encrypted_message
 
 
-def caeser_cipher_decryptor(key: int, encrypted_message: str) -> str:
-    """Decrypts a message which has been encrypted using a Caeser Cipher.
+def caesar_cipher_decryptor(key: int, encrypted_message: str) -> str:
+    """Decrypts a message which has been encrypted using a Caesar Cipher.
 
     Args:
         encrypted_message (str): Message to be decrypted.

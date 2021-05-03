@@ -4,8 +4,8 @@ from .secrets import (
     hex_cipher_encryptor,
     hex_cipher_decryptor,
     atbash_cipher_encryptor_decryptor,
-    caeser_cipher_encryptor,
-    caeser_cipher_decryptor,
+    caesar_cipher_encryptor,
+    caesar_cipher_decryptor,
     keyword_cipher_encryptor,
     keyword_cipher_decryptor,
     vigenere_cipher_encryptor,
@@ -43,17 +43,17 @@ def get_atbash_app():
     return app
 
 
-def get_caeser_app():
+def get_caesar_app():
 
     app = typer.Typer()
 
     @app.command("encode")
     def app_encode(key: int, message: str) -> str:
-        print(caeser_cipher_encryptor(key, message))
+        print(caesar_cipher_encryptor(key, message))
 
     @app.command("decode")
     def app_decode(key: int, encrypted_message: str) -> str:
-        print(caeser_cipher_decryptor(key, encrypted_message))
+        print(caesar_cipher_decryptor(key, encrypted_message))
 
     return app
 
@@ -94,7 +94,7 @@ def app():
 
     app.add_typer(get_hex_app(), name="hex")
     app.add_typer(get_atbash_app(), name="atbash")
-    app.add_typer(get_caeser_app(), name="caeser")
+    app.add_typer(get_caesar_app(), name="caesar")
     app.add_typer(get_keyword_app(), name="keyword")
     app.add_typer(get_vigenere_app(), name="vigenere")
 
