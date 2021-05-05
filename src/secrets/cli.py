@@ -13,7 +13,7 @@ from .secrets import (
 )
 
 
-def get_hex_app():
+def get_hex_app() -> typer.Typer:
 
     app = typer.Typer()
 
@@ -28,7 +28,7 @@ def get_hex_app():
     return app
 
 
-def get_atbash_app():
+def get_atbash_app() -> typer.Typer:
 
     app = typer.Typer()
 
@@ -43,7 +43,7 @@ def get_atbash_app():
     return app
 
 
-def get_caesar_app():
+def get_caesar_app() -> typer.Typer:
 
     app = typer.Typer()
 
@@ -58,7 +58,7 @@ def get_caesar_app():
     return app
 
 
-def get_keyword_app():
+def get_keyword_app() -> typer.Typer:
 
     app = typer.Typer()
 
@@ -73,7 +73,7 @@ def get_keyword_app():
     return app
 
 
-def get_vigenere_app():
+def get_vigenere_app() -> typer.Typer:
 
     app = typer.Typer()
 
@@ -88,7 +88,7 @@ def get_vigenere_app():
     return app
 
 
-def app():
+def app() -> typer.Typer:
 
     app = typer.Typer()
 
