@@ -3,10 +3,10 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/ghandic/PyCap-TODO-CRUD)
-![Coverage](https://img.shields.io/badge/coverage-100%25-green)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%3F/Yes%21/blue?icon=github)](https://github.com/ghandic/PyCap-TODO-CRUD)
+![Coverage](https://img.shields.io/badge/Coverage-100%25-green)
 
-This commandline program is a basic implementation for an encryption application using Python 3.6+ that allows you to encrypt and decrypt basic strings of text using common ciphers (Hex Cipher, Atbash Cipher, Caesar Cipher, Keyword Cipher and Vigenere Cipher).
+This command line program is a basic implementation for an encryption application using Python 3.6+ that allows you to encrypt and decrypt basic strings of text using common ciphers (Hex Cipher, Atbash Cipher, Caesar Cipher, Keyword Cipher and Vigenere Cipher).
 
 ## Requirements
 
