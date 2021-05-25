@@ -12,7 +12,7 @@ pipenv run black src --line-length=120
 # Test coverage
 pipenv run pytest --cov=src/todo --cov-report html ${@}
 
-# Type anno coverage
+# Type annotation coverage
 pipenv run mypy .
 
 # Docstring coverage

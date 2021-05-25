@@ -21,9 +21,7 @@ def hex_cipher_decryptor(encrypted_message: str) -> str:
     Returns:
         decrypted_message (str): Decrypted message.
     """
-    encrypted_characters = [
-        encrypted_message[i : i + 4] for i in range(0, len(encrypted_message), 4)
-    ]
+    encrypted_characters = [encrypted_message[i : i + 4] for i in range(0, len(encrypted_message), 4)]
     decrypted_message = "".join([chr(int(char, 16)) for char in encrypted_characters])
 
     return decrypted_message
@@ -65,9 +63,7 @@ def caesar_cipher_encryptor(key: int, message: str) -> str:
     Returns:
         encrypted_message (str): Encrypted message.
     """
-    encrypted_message = "".join(
-        [chr(((ord(char) - ord("a") + key) % 26) + ord("a")) for char in message]
-    )
+    encrypted_message = "".join([chr(((ord(char) - ord("a") + key) % 26) + ord("a")) for char in message])
 
     return encrypted_message
 
@@ -82,12 +78,7 @@ def caesar_cipher_decryptor(key: int, encrypted_message: str) -> str:
     Returns:
         decrypted_message (str): Decrypted message.
     """
-    decrypted_message = "".join(
-        [
-            chr(((ord(char) - ord("a") - key) % 26) + ord("a"))
-            for char in encrypted_message
-        ]
-    )
+    decrypted_message = "".join([chr(((ord(char) - ord("a") - key) % 26) + ord("a")) for char in encrypted_message])
 
     return decrypted_message
 
